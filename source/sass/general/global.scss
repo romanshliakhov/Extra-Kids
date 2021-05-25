@@ -88,6 +88,7 @@ a {
 .container {
   max-width: 1290px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .container__fluid {
@@ -107,4 +108,42 @@ a {
   line-height: 17px;
   font-weight: 500;
   color: #ffffff;
+}
+
+.title {
+  font-family: "SquareSans", sans-serif;
+  font-size: 56px;
+  line-height: 65px;
+  color: #072734;
+}
+
+.aside {
+  max-width: 300px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.number {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #14c0f3 0%, #0086cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-family: "SquareSans", sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  color: #072734;
+}
+
+.text {
+  height: 98px;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
 }

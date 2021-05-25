@@ -1,0 +1,30 @@
+.experts__inner {
+  margin: 100px 0;
+  display: flex;
+}
+
+.experts__publications {
+  margin-top: 35px;
+  width: 198px;
+  height: 51px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(1, 136, 205, 0.2);
+  border-radius: 30px 0 30px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #14c0f3 0%, #0086cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.experts__articles {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  width: 100%;
+}
