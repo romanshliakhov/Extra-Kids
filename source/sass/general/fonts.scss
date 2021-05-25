@@ -1,27 +1,36 @@
 @font-face {
-   font-style: normal;
-   font-weight: 300;
-   font-family: "Rubik";
-   font-display: swap;
-   src: url("../fonts/Rubik-Light.woff2") format("woff2"),
-      url("../fonts/Rubik-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
-   font-style: normal;
-   font-weight: 400;
-   font-family: "Rubik";
-   font-display: swap;
-   src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
-      url("../fonts/Rubik-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium.woff") format("woff");
 }
 
 @font-face {
-   font-style: normal;
-   font-weight: 500;
-   font-family: "Rubik";
-   font-display: swap;
-   src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
-      url("../fonts/Rubik-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 999;
+  font-family: "SquareSans";
+  font-display: swap;
+  src: url("../fonts/PFSquareSansPro-ExtraBlackItalic.woff2") format("woff2"),
+    url("../fonts/PFSquareSansPro-ExtraBlackItalic.woff") format("woff");
 }
 
