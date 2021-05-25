@@ -90,8 +90,13 @@ a {
 }
 
 .container {
-  max-width: 1330px;
+  max-width: 1510px;
   margin: 0 auto;
   padding: 0 5px;
+}
+
+.container__fluid {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
