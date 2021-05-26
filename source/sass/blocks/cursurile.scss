@@ -1,0 +1,149 @@
+.cursurile {
+  background-color: #f3f7fc;
+}
+
+.cursurile__inner {
+  padding: 100px 0;
+  display: flex;
+}
+
+.cursurile__aside {
+  width: 300px;
+  margin-right: 30px;
+}
+
+.cursurile__aside-wrapp {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cursurile__arrows {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cursurile__slider-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cursurile__item + .cursurile__item {
+  margin-left: 30px;
+}
+
+.cursurile__wrapper {
+  max-width: 366px;
+  width: 100%;
+}
+
+.cursurile__item-head {
+  background: #ffffff;
+  border: 1px solid #f3f7fc;
+  box-shadow: 0 2px 4px -2px rgba(24, 39, 75, 0.12),
+    0 4px 4px -2px rgba(24, 39, 75, 0.08);
+  border-radius: 16px 16px 0 0;
+}
+
+.cursurile__item-image {
+  max-height: 244px;
+}
+
+.cursurile__item-info {
+  margin: 30px 0 25px;
+  position: relative;
+  text-align: center;
+}
+
+.cursurile__item-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 41px;
+  background: linear-gradient(90deg, #14c0f3 0%, #0086cc 100%);
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 0 16px;
+  color: #ffffff;
+  top: -55px;
+  left: 0;
+}
+
+.cursurile__item-price {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.cursurile__item-month {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.cursurile__item-title {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #072734;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cursurile__item-descr {
+  margin: 10px 20px 0;
+  min-height: 60px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.cursurile__item-details {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.cursurile__item-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.cursurile__detail-head {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.cursurile__detail-bot {
+  font-size: 14px;
+  line-height: 17px;
+  color: #f3a401;
+}
+
+.cursurile__detail-bold {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cursurile__item-link {
+  margin-top: 8px;
+  height: 54px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #f3f7fc;
+  box-shadow: 0 2px 4px -2px rgba(24, 39, 75, 0.12),
+    0 4px 4px -2px rgba(24, 39, 75, 0.08);
+  border-radius: 0 0 16px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

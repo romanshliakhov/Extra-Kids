@@ -1,0 +1,100 @@
+.impressile {
+  background-color: #f3f7fc;
+  padding: 100px 0;
+}
+
+.impressile__wrapp {
+  margin-top: 56px;
+  max-width: 410px;
+  width: 100%;
+}
+
+.impressile__item + .impressile__item {
+  padding-right: 30px;
+}
+
+.impressile__head {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 6px 8px -6px rgba(24, 39, 75, 0.12),
+    0 8px 16px -6px rgba(24, 39, 75, 0.08);
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/background/quotes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 46px;
+    width: 59px;
+    top: 26px;
+    right: 28px;
+    opacity: 0.1;
+  }
+}
+
+.impressile__avatar {
+  position: absolute;
+  height: 86px;
+  width: 86px;
+  top: -43px;
+  border-radius: 50%;
+}
+
+.impressile__name {
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #072734;
+}
+
+.impressile__child {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.impressile__curs {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.impressile__curs-title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #14c0f3 0%, #0086cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.impressile__bot {
+  min-height: 160px;
+  margin-top: 8px;
+  padding: 15px 25px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px -2px rgba(24, 39, 75, 0.12),
+    0 4px 4px -2px rgba(24, 39, 75, 0.08);
+  border-radius: 0 0 16px 16px;
+}
+
+.impressile__feed {
+  font-size: 14px;
+  line-height: 20px;
+
+  & + & {
+    margin-top: 5px;
+  }
+
+  span {
+    display: block;
+  }
+}
