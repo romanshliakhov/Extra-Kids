@@ -1,0 +1,59 @@
+.despre__inner {
+  margin: 50px 0 79px;
+}
+
+.despre__title {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 5px;
+    background: #fbc354;
+    left: 0;
+    bottom: -15px;
+  }
+}
+
+.despre__wrapp {
+  padding-top: 25px;
+  display: flex;
+  position: relative;
+}
+
+.despre__block {
+  margin: 86px 0;
+  max-width: 905px;
+  width: 100%;
+  background-color: #f3f7fc;
+  border-radius: 16px 0 0 16px;
+  padding: 40px 66px;
+}
+
+.despre__block-text {
+  max-width: 550px;
+}
+
+.despre__text {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 500;
+  color: #072734;
+
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.despre__text-bold {
+  font-weight: 700;
+}
+
+.despre__image {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  max-height: 570px;
+  max-width: 635px;
+}

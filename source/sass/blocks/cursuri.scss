@@ -1,0 +1,36 @@
+.cursuri {
+  background: #f3f7fc;
+}
+
+.cursuri__title {
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 5px;
+    background: #fbc354;
+    left: 50%;
+    bottom: -15px;
+  }
+}
+
+.cursuri__wrapp {
+  padding: 50px 0;
+  max-width: 1158px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cursuri__items {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .cursurile__item {
+    margin-bottom: 50px;
+  }
+}
