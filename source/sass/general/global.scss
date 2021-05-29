@@ -171,7 +171,7 @@ a {
   width: 43px;
   height: 43px;
   background: #ffffff;
-  box-shadow: 0 4px 20px rgba(1, 136, 205, 0.2);
+  box-shadow: 0 4px 20px #0188cd33;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -184,4 +184,18 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #666666;
+    text-transform: uppercase;
+  }
 }

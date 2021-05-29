@@ -27,10 +27,18 @@
 
 @font-face {
   font-style: normal;
+  font-weight: 700;
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 999;
   font-family: "SquareSans";
   font-display: swap;
   src: url("../fonts/PFSquareSansPro-ExtraBlackItalic.woff2") format("woff2"),
     url("../fonts/PFSquareSansPro-ExtraBlackItalic.woff") format("woff");
 }
-
