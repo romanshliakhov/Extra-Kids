@@ -1,10 +1,18 @@
+.articles {
+  background-color: #f3f7fc;
+}
+
+.articles__inner {
+  padding-top: 50px;
+}
+
 .articles__item {
   max-width: 300px;
   width: 100%;
 
-  & + & {
-    margin-left: 30px;
-  }
+  // & + & {
+  //   margin-left: 30px;
+  // }
 }
 
 .articles__top {
@@ -22,7 +30,7 @@
 }
 
 .articles__info {
-  margin: 25px 20px;
+  margin: 25px 25px 25px 20px;
 }
 
 .articles__title {
@@ -56,4 +64,112 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+// article page
+.articles__wrapp {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles__aside {
+  max-width: 232px;
+  width: 100%;
+}
+
+.articles__content {
+  max-width: 960px;
+  width: 100%;
+}
+
+.articles__content-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .articles__item {
+    margin-bottom: 50px;
+
+    &:first-child {
+      max-width: 960px;
+      width: 100%;
+
+      .articles__top {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+      }
+
+      .articles__image {
+        max-width: 100%;
+        height: 474px;
+      }
+
+      .articles__img {
+        border-radius: 16px;
+      }
+
+      .articles__info {
+        margin: 15px 0 20px;
+      }
+
+      .articles__link {
+        max-width: 253px;
+        box-shadow: 0 2px 4px -2px rgba(24, 39, 75, 0.12),
+          0 4px 4px -2px rgba(24, 39, 75, 0.08);
+        border-radius: 30px 0 30px 30px;
+      }
+    }
+  }
+}
+
+// articles-card
+.articles__aside-info {
+  margin-top: 32px;
+  padding: 27px 30px;
+  width: 232px;
+  height: 254px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.articles__socials-share,
+.articles__date-name {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+
+  svg {
+    margin-right: 15px;
+  }
+}
+
+.articles__socials {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.articles__socials-link {
+  width: 24px;
+  height: 24px;
+
+  & + & {
+    margin-left: 15px;
+  }
+}
+
+.articles__aside-date {
+  margin-top: 51px;
+}
+
+.articles__date-pubtime {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #072734;
 }

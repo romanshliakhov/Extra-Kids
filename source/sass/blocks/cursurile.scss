@@ -25,18 +25,18 @@
   justify-content: flex-end;
 }
 
-.cursurile__slider-inner {
-  display: flex;
-  justify-content: space-between;
+.cursurile__slider {
+  max-width: 1115px;
 }
 
-// .cursurile__item + .cursurile__item {
-//   margin-left: 30px;
-// }
+.cursurile__item + .cursurile__item {
+  padding-right: 30px;
+}
 
 .cursurile__wrapper {
   max-width: 366px;
   width: 100%;
+  height: 525px;
 }
 
 .cursurile__item-head {

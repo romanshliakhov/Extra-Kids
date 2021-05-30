@@ -8,8 +8,11 @@
 @import "blocks/Impresiile.scss";
 @import "blocks/question.scss";
 @import "blocks/experts.scss";
-@import "blocks/articles.scss";
 @import "blocks/map.scss";
+//article page
+@import "blocks/articles.scss";
+// article-card page
+@import "blocks/publication.scss";
 // despre page
 @import "blocks/despre.scss";
 // cursuri page
@@ -25,5 +28,11 @@
 @import "blocks/tehnica.scss";
 // caligrafica page
 @import "blocks/caligrafica.scss";
+// tabs
+@import "blocks/tabs.scss";
+// paginations
+@import "blocks/pagination.scss";
+// galerie page
+@import "blocks/galerie.scss";
 // adaptive
 @import "blocks/media.scss";

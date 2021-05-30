@@ -1,3 +1,15 @@
+// cursurile slider
+$(function () {
+  $('.cursurile__slider-inner').slick({
+    prevArrow: '.cursurile__arrow-prev',
+    nextArrow: '.cursurile__arrow-next',
+    autoplay: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
+  });
+});
+
 // impressile slider
 $(function () {
   $('.impressile__slider').slick({
@@ -33,4 +45,35 @@ $(function () {
   });
 });
 
+// publication slider
+$(function () {
+  $('.publication__slider-inner').slick({
+    prevArrow: '.impressile__arrow-prev',
+    nextArrow: '.impressile__arrow-next',
+    autoplay: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
+  });
+});
 
+
+// articles tabs
+document.querySelectorAll('.tabs__triggers-item').forEach((item) =>
+  item.addEventListener('click', function (e) {
+    e.preventDefault();
+    const id = e.target.getAttribute('href').replace('#', '');
+
+    document.querySelectorAll('.tabs__triggers-item').forEach(
+      (child) => child.classList.remove('tabs__triggers-item--active')
+    );
+    document.querySelectorAll('.tabs__content-item').forEach(
+      (child) => child.classList.remove('tabs__content-item--active')
+    );
+
+    item.classList.add('tabs__triggers-item--active');
+    document.getElementById(id).classList.add('tabs__content-item--active');
+  })
+);
+
+document.querySelector('.tabs__triggers-item').click();

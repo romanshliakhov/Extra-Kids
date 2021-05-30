@@ -1,0 +1,39 @@
+.galerie {
+  background-color: #f3f7fc;
+}
+
+.galerie__inner {
+  padding-top: 50px;
+}
+
+.galerie__wrapp {
+  margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.galerie__tabs {
+  margin-top: 23px;
+}
+
+.galerie__content {
+  max-width: 960px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.galerie__triggers {
+  .tabs__triggers-item {
+    &:first-child {
+      max-width: 141px;
+    }
+
+    &:nth-child(2) {
+      max-width: 122px;
+    }
+
+    &:last-child {
+      max-width: 211px;
+    }
+  }
+}
