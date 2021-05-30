@@ -1,3 +1,60 @@
 .atmosfera {
   padding: 100px 0;
 }
+
+.atmosfera__item + .atmosfera__item {
+  padding-right: 5px;
+}
+
+.atmosfera__wrapp-fst {
+  max-width: 455px;
+}
+
+.atmosfera__fst {
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.atmosfera__fst-top {
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.atmosfera__top-image {
+  width: 225px;
+}
+
+.atmosfera__fst-bot {
+  height: 300px;
+}
+
+.atmosfera__wrapp-sec {
+  max-width: 330px;
+}
+
+.atmosfera__sec {
+  max-height: 465px;
+
+  & + & {
+    margin-top: 5px;
+  }
+}
+
+.atmosfera__sec-image {
+  height: 230px;
+}
+
+.atmosfera__sec-img {
+  object-fit: cover;
+}
+
+.atmosfera__trd {
+  height: 465px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+

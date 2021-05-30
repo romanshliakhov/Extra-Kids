@@ -22,6 +22,18 @@ $(function () {
   });
 });
 
+// atmosfera slider
+$(function () {
+  $('.atmosfera__slider').slick({
+    prevArrow: '.atmosfera__arrow-prev',
+    nextArrow: '.atmosfera__arrow-next',
+    autoplay: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+  });
+});
+
 
 // cursdescr__sliders
 $(function () {
@@ -57,6 +69,12 @@ $(function () {
   });
 });
 
+// lightGallery
+lightGallery(document.getElementById('aniimated-thumbnials'), {
+	thumbnail: true,
+	fullScreen: true,
+});
+
 
 // articles tabs
 document.querySelectorAll('.tabs__triggers-item').forEach((item) =>
@@ -77,3 +95,4 @@ document.querySelectorAll('.tabs__triggers-item').forEach((item) =>
 );
 
 document.querySelector('.tabs__triggers-item').click();
+

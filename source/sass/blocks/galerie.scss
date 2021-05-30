@@ -19,6 +19,10 @@
 .galerie__content {
   max-width: 960px;
   width: 100%;
+}
+
+.galerie__content-inner {
+  // height: 897px;
   margin-bottom: 40px;
 }
 
@@ -37,3 +41,30 @@
     }
   }
 }
+
+.galerie__fancybox {
+  margin-bottom: 40px;
+}
+
+.galerie__item-1 {
+  max-width: 410px;
+  max-height: 279px;
+}
+
+.galerie__item-2 {
+  max-width: 520px;
+  max-height: 376px;
+}
+
+.galerie__item-3 {
+  max-width: 520px;
+  max-height: 491px;
+}
+
+.galerie__grid-img {
+  object-fit: cover;
+  object-position: bottom;
+  max-height: 782px;
+  max-width: 1052px;
+}
+
