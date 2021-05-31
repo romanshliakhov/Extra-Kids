@@ -70,10 +70,12 @@ $(function () {
 });
 
 // lightGallery
-lightGallery(document.getElementById('aniimated-thumbnials'), {
+lightGallery(document.getElementById('gallery'), {
 	thumbnail: true,
 	fullScreen: true,
 });
+
+
 
 
 // articles tabs
@@ -94,5 +96,5 @@ document.querySelectorAll('.tabs__triggers-item').forEach((item) =>
   })
 );
 
-document.querySelector('.tabs__triggers-item').click();
+document.querySelector('.tabs__triggers-item') && document.querySelector('.tabs__triggers-item').click();
 
