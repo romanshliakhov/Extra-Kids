@@ -51,6 +51,10 @@
   opacity: 0.5;
   display: flex;
   align-items: center;
+
+  svg {
+    fill: #14c0f3;
+  }
 }
 
 .popup__phone {
