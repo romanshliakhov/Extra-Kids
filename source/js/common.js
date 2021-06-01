@@ -1,3 +1,10 @@
+// mobile menu
+$(".hamburger").click(function (event) {
+  $(".hamburger").toggleClass('hamburger__active'),
+    $(".mobile__menu ").toggleClass('mobile__menu__active');
+  $('body').toggleClass('body__scroll');
+});
+
 // cursurile slider
 $(function () {
   $('.cursurile__slider-inner').slick({
@@ -7,6 +14,15 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,
+    responsive: [{
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        variableWidth: false,
+      },
+    }]
   });
 });
 
@@ -19,6 +35,14 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,
+    responsive: [{
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    }]
   });
 });
 
@@ -31,6 +55,14 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     variableWidth: true,
+    responsive: [{
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: false,
+      },
+    }]
   });
 });
 
@@ -52,7 +84,7 @@ $(function () {
     slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.cursdescr__slider-main',
-		focusOnSelect: true,
+    focusOnSelect: true,
     variableWidth: true,
   });
 });
@@ -71,8 +103,8 @@ $(function () {
 
 // lightGallery
 lightGallery(document.getElementById('gallery'), {
-	thumbnail: true,
-	fullScreen: true,
+  thumbnail: true,
+  fullScreen: true,
 });
 
 
@@ -97,4 +129,3 @@ document.querySelectorAll('.tabs__triggers-item').forEach((item) =>
 );
 
 document.querySelector('.tabs__triggers-item') && document.querySelector('.tabs__triggers-item').click();
-

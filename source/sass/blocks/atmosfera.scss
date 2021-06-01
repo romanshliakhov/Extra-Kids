@@ -11,13 +11,13 @@
 }
 
 .atmosfera__fst {
-  height: 465px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .atmosfera__fst-top {
+  margin-bottom: 5px;
   height: 160px;
   display: flex;
   justify-content: space-between;
@@ -36,8 +36,6 @@
 }
 
 .atmosfera__sec {
-  max-height: 465px;
-
   & + & {
     margin-top: 5px;
   }
@@ -52,9 +50,13 @@
 }
 
 .atmosfera__trd {
-  height: 465px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
+
+  .atmosfera__fst-top {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
 }
 
