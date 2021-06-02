@@ -43,6 +43,7 @@
     <div class="container__fluid">
       <div class="wrapper">
         <section class="popup">
+          <div class="container">
           <div class="popup__wrapp">
             <div class="popup__overlay"></div>
             <div class="popup__inner">
@@ -75,7 +76,6 @@
                   <svg width="16" height="16">
                     <use href="img/sprite/sprite.svg#phone"></use>
                   </svg>
-
                   <a class="popup__phone" href="tel:37379541803"
                     >+(373) 795 41 803</a
                   >
@@ -140,7 +140,79 @@
               </button>
             </div>
           </div>
+        </div>
         </section>
+
+        <div class="mobile__menu-box">
+          <div class="mobile__menu">
+            <div class="container">
+              <div class="mobile__menu-wrapp">
+                <div class="mobile__logo">
+                  <a class="header__logo" href="#">
+                    <img class="header__img" src="img/logo.png" alt="Logo" />
+                  </a>
+                  <div class="hamburger__wrapp">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="mobile__nav">
+                  <li class="mobile__nav-item">
+                    <a class="mobile__nav-link" href="#">Despre noi</a>
+                  </li>
+                  <li class="mobile__nav-item">
+                    <a class="mobile__nav-link" href="#">Cursuri</a>
+                  </li>
+                  <li class="mobile__nav-item">
+                    <a class="mobile__nav-link" href="#">Articole</a>
+                  </li>
+                  <li class="mobile__nav-item">
+                    <a class="mobile__nav-link" href="#">Galerie</a>
+                  </li>
+                  <li class="mobile__nav-item">
+                    <a class="mobile__nav-link" href="#">Contacte</a>
+                  </li>
+                </ul>
+
+                <div class="mobile__contacts">
+                  <div div class="header__contact">
+                    <svg width="16" height="16">
+                      <use href="img/sprite/sprite.svg#phone"></use>
+                    </svg>
+                    <a class="phone" href="tel:37379541803">+(373) 795 41 803</a>
+                  </div>
+                  <div class="header__contact">
+                    <svg class="header__contact-email" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0)">
+                        <path d="M9.28027 7.07175L14 10.0555V3.962L9.28027 7.07175Z" fill="white" />
+                        <path d="M0 3.962V10.0555L4.71975 7.07175L0 3.962Z" fill="white" />
+                        <path
+                          d="M13.125 2.1875H0.874995C0.43837 2.1875 0.0918701 2.513 0.0262451 2.93213L6.99999 7.52675L13.9737 2.93213C13.9081 2.513 13.5616 2.1875 13.125 2.1875Z"
+                          fill="white" />
+                        <path
+                          d="M8.47876 7.60022L7.24064 8.41572C7.16714 8.46385 7.08401 8.48747 7.00001 8.48747C6.91601 8.48747 6.83289 8.46385 6.75939 8.41572L5.52126 7.59935L0.0280151 11.074C0.0953901 11.4896 0.44014 11.8125 0.875015 11.8125H13.125C13.5599 11.8125 13.9046 11.4896 13.972 11.074L8.47876 7.60022Z"
+                          fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <a class="email" href="mailto:extrakids.orhei@gmail.com">extrakids.orhei@gmail.com</a>
+                  </div>
+                </div>
+
+                <button class="header__btn" type="button">Obține consultația</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <header class="header">
           <div class="container">
@@ -159,57 +231,36 @@
                 <li class="header__nav-item">
                   <a class="header__nav-link" href="#">Articole</a>
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item header__nav-item--active">
                   <a class="header__nav-link" href="#">Galerie</a>
                 </li>
-                <li class="header__nav-item header__nav-item--active">
+                <li class="header__nav-item">
                   <a class="header__nav-link" href="#">Contacte</a>
                 </li>
               </ul>
 
               <div class="header__contacts">
                 <div class="header__contact">
-                  <svg
-                    class="header__contact-phone"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg class="header__contact-phone" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M14.7368 10.5347C13.7499 10.5347 12.7832 10.3806 11.8669 10.0783C11.4198 9.92421 10.912 10.0429 10.6181 10.3427L8.80169 11.7145C6.71748 10.6021 5.38358 9.26906 4.28633 7.20001L5.62106 5.42653C5.95706 5.09053 6.07749 4.59873 5.93349 4.13811C5.62864 3.216 5.4737 2.24842 5.4737 1.26316C5.4737 0.566724 4.90698 0 4.21054 0H1.26316C0.566724 0 0 0.566724 0 1.26316C0 9.38863 6.61137 16 14.7368 16C15.4333 16 16 15.4333 16 14.7368V11.7979C16 11.1015 15.4333 10.5347 14.7368 10.5347Z"
-                      fill="white"
-                    />
+                      fill="white" />
                   </svg>
                   <a class="phone" href="tel:37379541803">+(373) 795 41 803</a>
                 </div>
                 <div class="header__contact">
-                  <svg
-                    class="header__contact-email"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg class="header__contact-email" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
-                      <path
-                        d="M9.28027 7.07175L14 10.0555V3.962L9.28027 7.07175Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M0 3.962V10.0555L4.71975 7.07175L0 3.962Z"
-                        fill="white"
-                      />
+                      <path d="M9.28027 7.07175L14 10.0555V3.962L9.28027 7.07175Z" fill="white" />
+                      <path d="M0 3.962V10.0555L4.71975 7.07175L0 3.962Z" fill="white" />
                       <path
                         d="M13.125 2.1875H0.874995C0.43837 2.1875 0.0918701 2.513 0.0262451 2.93213L6.99999 7.52675L13.9737 2.93213C13.9081 2.513 13.5616 2.1875 13.125 2.1875Z"
-                        fill="white"
-                      />
+                        fill="white" />
                       <path
                         d="M8.47876 7.60022L7.24064 8.41572C7.16714 8.46385 7.08401 8.48747 7.00001 8.48747C6.91601 8.48747 6.83289 8.46385 6.75939 8.41572L5.52126 7.59935L0.0280151 11.074C0.0953901 11.4896 0.44014 11.8125 0.875015 11.8125H13.125C13.5599 11.8125 13.9046 11.4896 13.972 11.074L8.47876 7.60022Z"
-                        fill="white"
-                      />
+                        fill="white" />
                     </g>
                     <defs>
                       <clipPath id="clip0">
@@ -217,21 +268,25 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <a class="email" href="mailto:extrakids.orhei@gmail.com"
-                    >extrakids.orhei@gmail.com</a
-                  >
+                  <a class="email" href="mailto:extrakids.orhei@gmail.com">extrakids.orhei@gmail.com</a>
                 </div>
               </div>
 
-              <button class="header__btn" type="button">
-                Obține consultația
-              </button>
+              <button class="header__btn" type="button">Obține consultația</button>
+
+              <div class="hamburger__wrapp">
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
             </div>
           </div>
         </header>
 
         <main class="main">
-          <section class="galerie">
+          <!-- <section class="galerie">
             <div class="container">
               <div class="galerie__inner">
                 <h1 class="despre__title title">Galerie</h1>
@@ -368,7 +423,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
         </main>
       </div>
     </div>

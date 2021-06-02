@@ -1,0 +1,35 @@
+.mobile__menu-box {
+  display: none;
+}
+
+.mobile__menu-wrapp {
+  .header__btn {
+    margin-top: 45px;
+    width: 100%;
+  }
+}
+
+.mobile__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  margin: 10px 0 53px;
+}
+
+.mobile__nav-item {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  & + & {
+    margin-top: 30px;
+  }
+}
+
+
+.mobile__contacts {
+  margin-top: 50px;
+}

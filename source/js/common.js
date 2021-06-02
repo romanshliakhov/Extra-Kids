@@ -15,7 +15,14 @@ $(function () {
     slidesToScroll: 1,
     variableWidth: true,
     responsive: [{
-      breakpoint: 575,
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        variableWidth: false,
+      },
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -35,14 +42,34 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,
-    responsive: [{
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+		responsive: [
+			{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+        variableWidth: true,
+				}
+			},
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+          // variableWidth: false,
+          }
+        },
+			{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
         dots: true,
-      },
-    }]
+        variableWidth: false,
+				}
+			}
+		]
   });
 });
 
@@ -55,8 +82,17 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     variableWidth: true,
-    responsive: [{
-      breakpoint: 575,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: true,
+          }
+        },
+      {
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -75,7 +111,25 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     asNavFor: '.cursdescr__slider-preview',
-    swipe: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          variableWidth: false,
+          }
+        },
+      {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+
+    }]
   });
 
   $('.cursdescr__slider-preview').slick({
@@ -98,17 +152,27 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+          variableWidth: true,
+          }
+        },
+      {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: false,
+        dots: true,
+      },
+    }]
   });
 });
-
-// lightGallery
-lightGallery(document.getElementById('gallery'), {
-  thumbnail: true,
-  fullScreen: true,
-});
-
-
-
 
 // articles tabs
 document.querySelectorAll('.tabs__triggers-item').forEach((item) =>
@@ -129,3 +193,10 @@ document.querySelectorAll('.tabs__triggers-item').forEach((item) =>
 );
 
 document.querySelector('.tabs__triggers-item') && document.querySelector('.tabs__triggers-item').click();
+
+
+// lightGallery
+// lightGallery(document.getElementById('gallery'), {
+//   thumbnail: true,
+//   fullScreen: true,
+// });
