@@ -15,14 +15,20 @@ $(function () {
     slidesToScroll: 1,
     variableWidth: true,
     responsive: [{
-      breakpoint: 768,
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // variableWidth: false,
+      },
+      breakpoint: 767,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
         dots: true,
         variableWidth: false,
       },
-      breakpoint: 576,
+      breakpoint: 575,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

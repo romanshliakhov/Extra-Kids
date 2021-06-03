@@ -58,8 +58,12 @@
   color: #ffffff;
 }
 
-.cresti__list {
+.cresti__lists {
   margin-top: 40px;
+}
+
+.cresti__list + .cresti__list {
+  margin-top: 30px;
 }
 
 .cresti__list-item {
