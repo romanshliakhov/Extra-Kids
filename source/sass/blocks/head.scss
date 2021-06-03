@@ -1,5 +1,5 @@
 .head {
-  height: 628px;
+  height: 710px;
   margin-top: -90px;
   background-image: url(../img/background/head.png);
   background-position: center;
@@ -8,8 +8,8 @@
 }
 
 .head__inner {
-  height: 538px;
-  margin: 90px auto;
+  padding-top: 90px;
+  height: 100%;
   background-image: url(../img/background/head-bg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -24,6 +24,7 @@
 
 .head__info-title {
   max-width: 693px;
+  text-shadow: 3px 5px 6px #ffffff;
 }
 
 .head__info-text {

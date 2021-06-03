@@ -134,7 +134,6 @@ $(function () {
         slidesToScroll: 1,
         dots: true,
       },
-
     }]
   });
 
@@ -146,6 +145,15 @@ $(function () {
     asNavFor: '.cursdescr__slider-main',
     focusOnSelect: true,
     variableWidth: true,
+    responsive: [
+      {
+      breakpoint: 1199,
+      settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          variableWidth: true,
+      },
+    }]
   });
 });
 
@@ -159,6 +167,14 @@ $(function () {
     slidesToScroll: 1,
     variableWidth: true,
     responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: true,
+          }
+        },
       {
         breakpoint: 767,
         settings: {
@@ -202,7 +218,7 @@ document.querySelector('.tabs__triggers-item') && document.querySelector('.tabs_
 
 
 // lightGallery
-// lightGallery(document.getElementById('gallery'), {
-//   thumbnail: true,
-//   fullScreen: true,
-// });
+lightGallery(document.getElementById('gallery'), {
+  thumbnail: true,
+  fullScreen: true,
+});

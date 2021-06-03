@@ -1,5 +1,5 @@
 .brain__inner {
-  margin: 70px;
+  margin: 70px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,11 @@
   margin-top: 50px;
 }
 
-.brain__info-img {
+.brain__info-wrapp {
   min-width: 1290px;
   height: 456px;
+}
+
+.brain__info-img {
+  object-fit: cover;
 }
