@@ -12,6 +12,10 @@ body {
   color: #545454;
 }
 
+.body__scroll {
+  overflow-y: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -201,5 +205,20 @@ a {
     font-weight: 600;
     color: #666666;
     text-transform: uppercase;
+  }
+}
+
+.menu__overlay {
+  display: none;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+
+  &--active {
+    display: block;
   }
 }

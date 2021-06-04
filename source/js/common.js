@@ -1,5 +1,6 @@
 // mobile menu
 $(".hamburger").click(function (event) {
+  $('.menu__overlay').toggleClass('menu__overlay--active');
   $(".hamburger").toggleClass('hamburger__active'),
     $(".mobile__menu ").toggleClass('mobile__menu__active');
       $('body').toggleClass('body__scroll');
