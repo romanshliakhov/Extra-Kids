@@ -191,6 +191,7 @@
 
 .question__checkbox:checked + .question__confirm::before {
   background: linear-gradient(279.05deg, #fbc250 0%, #ffe547 100%);
+  border: transparent;
 }
 
 .question__checkbox:checked + .question__confirm::after {

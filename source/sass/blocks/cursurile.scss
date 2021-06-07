@@ -71,7 +71,7 @@
   box-sizing: border-box;
   border-radius: 0 16px;
   color: #ffffff;
-  top: -55px;
+  top: -22px;
   left: 0;
 }
 
@@ -114,12 +114,31 @@
 .cursurile__item-detail {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 44px;
+    border: 1px solid #e2e2e2;
+    right: 0;
+  }
+
+  &:last-child {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .cursurile__detail-head {
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 8px;
+
+
+
 }
 
 .cursurile__detail-bot {
@@ -151,7 +170,7 @@
 
   &:hover {
     background: linear-gradient(90deg, #14c0f3 0%, #0086cc 100%);
-    border-radius: 0px 0px 16px 16px;
+    border-radius: 0 0 16px 16px;
     color: #ffffff;
   }
 }

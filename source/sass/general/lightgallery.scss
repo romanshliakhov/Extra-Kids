@@ -343,7 +343,7 @@ body:not(.lg-from-hash)
 }
 
 .lg-outer .lg-thumb-outer {
-  background-color: #0d0a0a;
+  background-color: transparent;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -453,9 +453,9 @@ body:not(.lg-from-hash)
 }
 
 .lg-outer .lg-toggle-thumb {
-  background-color: #0d0a0a;
+  background-color: transparent;
   border-radius: 2px 2px 0 0;
-  color: #999999;
+  color: transparent;
   cursor: pointer;
   font-size: 24px;
   height: 39px;
