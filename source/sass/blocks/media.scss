@@ -333,10 +333,6 @@
     display: flex;
   }
 
-  .cursurile__item-info {
-    margin: 36px 0 20px;
-  }
-
   .cursurile__item-title {
     font-size: 14px;
     line-height: 23px;
@@ -361,6 +357,10 @@
 
     & + & {
       margin-top: 10px;
+    }
+
+    &::before {
+      display: none;
     }
   }
 
@@ -737,8 +737,15 @@
           margin: 25px 20px;
         }
 
+        .articles__title {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
         .articles__text {
-          margin-top: 0;
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 20px;
         }
 
         .articles__link {
@@ -824,6 +831,10 @@
     }
   }
 
+  .publication__main-img {
+    border-radius: 16px;
+  }
+
   // contacte page
   .contacts {
     .container {
@@ -892,6 +903,7 @@
   .contacts__map {
     margin-top: 40px;
     height: 270px;
+    padding: 0 3px;
 
     img {
       object-fit: cover;
@@ -919,8 +931,10 @@
   }
 
   .popup__subtitle {
+    max-width: 230px;
     line-height: 20px;
     margin-bottom: 25px;
+    text-align: center;
   }
 
   .popup__btn {
@@ -951,6 +965,12 @@
     width: 100%;
     height: 188px;
     margin-bottom: 15px;
+  }
+
+  .cursdescr__text {
+    span {
+      display: initial;
+    }
   }
 
   .brain__inner {
@@ -1044,7 +1064,9 @@
 
   .cursdescr__info {
     margin-top: 20px;
-    padding: 20px 0 30px;
+    padding: 20px 20px 30px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 
   .cursdescr__name {
@@ -2117,6 +2139,14 @@
     margin-top: 30px;
   }
 
+  .cursdescr__text {
+    font-size: 14px;
+    line-height: 20px;
+    span {
+      display: initial;
+    }
+  }
+
   .cursdescr__bot-items {
     justify-content: space-between;
     width: 100%;
@@ -2156,11 +2186,6 @@
   .cursdescr__avatar {
     height: 74px;
     width: 74px;
-  }
-
-  .cursdescr__text {
-    font-size: 14px;
-    line-height: 20px;
   }
 
   .cursdescr__list {
@@ -2440,7 +2465,8 @@
   // cresti
   .cresti {
     min-height: 1096px;
-    background-position: left;
+    background-image: url(../img/background/cresti768.jpg);
+    background-repeat: no-repeat;
   }
 
   .cresti__info {
@@ -2543,14 +2569,7 @@
   }
 
   .cursurile__item-details {
-    flex-direction: column;
-  }
-
-  .cursurile__item-detail {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
+    margin-top: 0;
   }
 
   .cursurile__detail-bold {
@@ -2770,6 +2789,12 @@
     margin-bottom: 20px;
   }
 
+  .cursdescr__text {
+    span {
+      display: initial;
+    }
+  }
+
   .cursdescr__title {
     max-width: 100%;
   }
@@ -2868,7 +2893,7 @@
   .about__item-subtitle {
     min-width: 100%;
     padding: 0 30px;
-    min-height: auto;
+    min-height: 60px;
   }
 
   // tehnica page
@@ -3111,6 +3136,7 @@
 
   .contacts__map {
     height: 270px;
+    padding: 0 3px;
 
     img {
       object-fit: cover;
@@ -3362,6 +3388,7 @@
   // cresti
   .cresti {
     min-height: 708px;
+    background-position: left;
   }
 
   .cresti__info {
@@ -3450,6 +3477,21 @@
 
   .cursurile__item-link {
     height: 56px;
+  }
+
+  .cursurile__item-details {
+    flex-direction: column;
+  }
+
+  .cursurile__item-detail {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+
+    &::before {
+      display: none;
+    }
   }
 
   // atmosfera
@@ -3554,6 +3596,7 @@
   }
 
   .map__img {
+    border-radius: 0 0 16px 16px;
     object-fit: cover;
   }
 
@@ -3636,6 +3679,16 @@
     max-width: 100%;
   }
 
+  .cursdescr__text {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 342px;
+
+    span {
+      display: initial;
+    }
+  }
+
   .cursdescr__list {
     margin: 20px 0 10px;
   }
@@ -3661,7 +3714,8 @@
   }
 
   .cursdescr__top-right {
-    margin-left: -77px;
+    margin-left: -72px;
+    margin-top: -10px;
   }
 
   .cursdescr__top-text {
@@ -3851,6 +3905,7 @@
 
   .contacts__details {
     max-width: 577px;
+    margin: 0;
 
     .question__form-labels {
       max-width: 281px;
@@ -3872,11 +3927,15 @@
     .question__btn {
       max-width: 281px;
     }
+
+    .question__terms {
+      max-width: 240px;
+    }
   }
 
   .contacts__map {
     height: 384px;
-    padding: 0 1px;
+    padding: 0 3px;
     display: flex;
 
     img {
