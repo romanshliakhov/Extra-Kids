@@ -3851,6 +3851,8 @@
 
   // articole-card
 
+
+
   .publication__title {
     font-size: 16px;
     line-height: 22px;
@@ -3867,6 +3869,11 @@
 
   .publication__slider {
     margin-top: 40px;
+
+    .container {
+      min-width: auto;
+      padding: 0;
+    }
   }
 
   .publication__item + .publication__item {
